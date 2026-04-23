@@ -1,0 +1,4 @@
+ansible -i hosts.ini -m setup -a '{"filter":"*ipv4"}' demo -k 
+ansible -i hosts.ini -m setup -a '{"filter":"*distribution*"}' demo -k 
+ansible -i hosts.ini -m setup -a '{"filter":"*hostname*"}' demo -k
+ansible -i hosts.ini -m setup -a '{"filter":"*env*"}' demo -k
